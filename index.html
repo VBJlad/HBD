@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 23rd Birthday, Mik</title>
+  <meta name="description" content="A special 23rd birthday story celebration for Mik (Mary Janet Buenavista).">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Fullscreen Particle/Confetti Canvas -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- Step 1: Envelope Overlay -->
+  <div id="envelope-overlay" class="overlay">
+    <div class="envelope-card">
+      <div class="wax-seal">
+        <span class="seal-monogram">23</span>
+      </div>
+      <p class="envelope-sub">A Special Delivery For</p>
+      <h1 class="envelope-title">Mik</h1>
+      <p class="envelope-fullname">Mary Janet Buenavista</p>
+      <p class="envelope-desc">Celebrating your 23rd milestone of joy, grace, and beauty.</p>
+      <button id="open-card-btn" class="btn btn-luxury pulse-glow">
+        <span>Open Birthday Celebration</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Main Container -->
+  <main class="main-container aesthetic-container">
+    
+    <!-- Ambient Glow Orbs -->
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <!-- Step 2: Balloon Popping Stage (Visible first, portrait is strictly hidden) -->
+    <section id="balloon-stage" class="balloon-stage-section">
+      <div class="stage-header">
+        <div class="sparkle-tag">23rd Milestone</div>
+        <h1 class="stage-title">
+          Pop 23 Balloons, <span class="gold-gradient-text">Mik</span>
+        </h1>
+        <p class="stage-desc">
+          Pop every single balloon below to unlock your 23rd birthday surprise.
+        </p>
+        <div class="counter-badge">
+          <span class="counter-label">Balloons Popped:</span>
+          <span id="balloon-counter" class="counter-number">0</span>
+          <span class="counter-total">/ 23</span>
+        </div>
+      </div>
+
+      <!-- 23 Interactive Balloons Grid -->
+      <div id="balloons-rack" class="balloons-rack">
+        <!-- Javascript dynamically inserts 23 balloons -->
+      </div>
+    </section>
+
+    <!-- Step 3: Instagrammable Story Card (Strictly HIDDEN until all 23 balloons are popped) -->
+    <section id="story-showcase" class="story-showcase-section hidden-story">
+      
+      <div class="story-container">
+        
+        <!-- Instagram Story Frame (9:16 Aspect Aesthetic) -->
+        <div id="instagram-card" class="instagram-card">
+          
+          <!-- Story Progress Bars -->
+          <div class="story-progress-bar">
+            <div class="progress-segment active"></div>
+            <div class="progress-segment active"></div>
+            <div class="progress-segment active"></div>
+          </div>
+
+          <!-- Story Top Header (Handle & Timestamp) -->
+          <div class="story-top-header">
+            <div class="story-user-badge">
+              <div class="user-avatar-ring">
+                <img src="assets/mary_janet.jpg" alt="Mik" class="user-avatar-mini">
+              </div>
+              <div class="story-meta">
+                <span class="story-username">mik.buenavista</span>
+                <span class="story-tagline">23rd Birthday Edition &bull; Today</span>
+              </div>
+            </div>
+            <div class="story-more-dots">&bull;&bull;&bull;</div>
+          </div>
+
+          <!-- Main Portrait Media Section -->
+          <div class="story-media-box">
+            <img src="assets/mary_janet.jpg" alt="Mary Janet Buenavista" class="story-main-image">
+            
+            <!-- Music Sticker Badge -->
+            <div id="story-music-sticker" class="story-music-sticker" role="button" title="Tap to pause or play melody">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+              </svg>
+              <span id="sticker-music-text">Happy Birthday Mik &bull; 23 Years of Grace</span>
+            </div>
+          </div>
+
+          <!-- Story Caption & Heartfelt Dedication -->
+          <div class="story-caption-card">
+            <div class="birthday-badge-pill">23 & RADIANT</div>
+            <h2 class="story-fullname">Mary Janet Buenavista</h2>
+            
+            <div class="story-message-bubble">
+              <p class="story-message-text">
+                "MIk, Happy 23rd Birthday! Iloveyouusooomuuch. Diko natapos ng 12AM aray kupoo AHHAHHA. See you later! Iloveeyouuu"
+              </p>
+            </div>
+
+            <div class="story-signoff">
+              From Alecksis with all my love &bull; October 20
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
